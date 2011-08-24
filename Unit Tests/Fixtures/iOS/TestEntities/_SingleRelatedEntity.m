@@ -43,19 +43,19 @@
 
 
 
+@dynamic testConcreteToOneRelationship;
+
+	
+
 @dynamic testAbstractToManyRelationship;
 
 	
 - (NSMutableSet*)testAbstractToManyRelationshipSet {
 	[self willAccessValueForKey:@"testAbstractToManyRelationship"];
-	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"testAbstractToManyRelationship"];
+	NSMutableSet *result = [self mutableSetValueForKey:@"testAbstractToManyRelationship"];
 	[self didAccessValueForKey:@"testAbstractToManyRelationship"];
 	return result;
 }
-	
-
-@dynamic testAbstractToOneRelationship;
-
 	
 
 @dynamic testConcreteToManyRelationship;
@@ -63,13 +63,13 @@
 	
 - (NSMutableSet*)testConcreteToManyRelationshipSet {
 	[self willAccessValueForKey:@"testConcreteToManyRelationship"];
-	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"testConcreteToManyRelationship"];
+	NSMutableSet *result = [self mutableSetValueForKey:@"testConcreteToManyRelationship"];
 	[self didAccessValueForKey:@"testConcreteToManyRelationship"];
 	return result;
 }
 	
 
-@dynamic testConcreteToOneRelationship;
+@dynamic testAbstractToOneRelationship;
 
 	
 

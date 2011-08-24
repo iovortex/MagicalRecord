@@ -6,15 +6,15 @@
 
 
 
+
+
+
+
+
+
+
+
 @class UIColor;
-
-
-
-
-
-
-
-
 
 
 
@@ -31,65 +31,7 @@
 
 
 
-
-@property (nonatomic, retain) NSNumber *booleanTestAttribute;
-
-
-@property BOOL booleanTestAttributeValue;
-- (BOOL)booleanTestAttributeValue;
-- (void)setBooleanTestAttributeValue:(BOOL)value_;
-
-//- (BOOL)validateBooleanTestAttribute:(id*)value_ error:(NSError**)error_;
-
-
-
-
-@property (nonatomic, retain) UIColor *colorTestAttribute;
-
-
-//- (BOOL)validateColorTestAttribute:(id*)value_ error:(NSError**)error_;
-
-
-
-
-@property (nonatomic, retain) NSDate *dateTestAttribute;
-
-
-//- (BOOL)validateDateTestAttribute:(id*)value_ error:(NSError**)error_;
-
-
-
-
-@property (nonatomic, retain) NSDate *dateWithCustomFormat;
-
-
-//- (BOOL)validateDateWithCustomFormat:(id*)value_ error:(NSError**)error_;
-
-
-
-
-@property (nonatomic, retain) NSDecimalNumber *decimalTestAttribute;
-
-
-//- (BOOL)validateDecimalTestAttribute:(id*)value_ error:(NSError**)error_;
-
-
-
-
-@property (nonatomic, retain) NSNumber *doubleTestAttribute;
-
-
-@property double doubleTestAttributeValue;
-- (double)doubleTestAttributeValue;
-- (void)setDoubleTestAttributeValue:(double)value_;
-
-//- (BOOL)validateDoubleTestAttribute:(id*)value_ error:(NSError**)error_;
-
-
-
-
 @property (nonatomic, retain) NSNumber *floatTestAttribute;
-
 
 @property float floatTestAttributeValue;
 - (float)floatTestAttributeValue;
@@ -99,21 +41,13 @@
 
 
 
+@property (nonatomic, retain) NSDate *dateWithCustomFormat;
 
-@property (nonatomic, retain) NSNumber *int16TestAttribute;
-
-
-@property short int16TestAttributeValue;
-- (short)int16TestAttributeValue;
-- (void)setInt16TestAttributeValue:(short)value_;
-
-//- (BOOL)validateInt16TestAttribute:(id*)value_ error:(NSError**)error_;
-
+//- (BOOL)validateDateWithCustomFormat:(id*)value_ error:(NSError**)error_;
 
 
 
 @property (nonatomic, retain) NSNumber *int32TestAttribute;
-
 
 @property int int32TestAttributeValue;
 - (int)int32TestAttributeValue;
@@ -123,37 +57,67 @@
 
 
 
+@property (nonatomic, retain) NSDate *dateTestAttribute;
 
-@property (nonatomic, retain) NSNumber *int64TestAttribute;
-
-
-@property long long int64TestAttributeValue;
-- (long long)int64TestAttributeValue;
-- (void)setInt64TestAttributeValue:(long long)value_;
-
-//- (BOOL)validateInt64TestAttribute:(id*)value_ error:(NSError**)error_;
+//- (BOOL)validateDateTestAttribute:(id*)value_ error:(NSError**)error_;
 
 
 
+@property (nonatomic, retain) NSNumber *int16TestAttribute;
 
-@property (nonatomic, retain) NSString *mappedStringAttribute;
+@property short int16TestAttributeValue;
+- (short)int16TestAttributeValue;
+- (void)setInt16TestAttributeValue:(short)value_;
 
-
-//- (BOOL)validateMappedStringAttribute:(id*)value_ error:(NSError**)error_;
-
+//- (BOOL)validateInt16TestAttribute:(id*)value_ error:(NSError**)error_;
 
 
 
 @property (nonatomic, retain) NSString *notInJsonAttribute;
 
-
 //- (BOOL)validateNotInJsonAttribute:(id*)value_ error:(NSError**)error_;
 
 
 
+@property (nonatomic, retain) NSDecimalNumber *decimalTestAttribute;
+
+//- (BOOL)validateDecimalTestAttribute:(id*)value_ error:(NSError**)error_;
+
+
+
+@property (nonatomic, retain) NSNumber *doubleTestAttribute;
+
+@property double doubleTestAttributeValue;
+- (double)doubleTestAttributeValue;
+- (void)setDoubleTestAttributeValue:(double)value_;
+
+//- (BOOL)validateDoubleTestAttribute:(id*)value_ error:(NSError**)error_;
+
+
+
+@property (nonatomic, retain) NSNumber *booleanTestAttribute;
+
+@property BOOL booleanTestAttributeValue;
+- (BOOL)booleanTestAttributeValue;
+- (void)setBooleanTestAttributeValue:(BOOL)value_;
+
+//- (BOOL)validateBooleanTestAttribute:(id*)value_ error:(NSError**)error_;
+
+
+
+@property (nonatomic, retain) UIColor *colorTestAttribute;
+
+//- (BOOL)validateColorTestAttribute:(id*)value_ error:(NSError**)error_;
+
+
+
+@property (nonatomic, retain) NSString *stringTestAttribute;
+
+//- (BOOL)validateStringTestAttribute:(id*)value_ error:(NSError**)error_;
+
+
 
 @property (nonatomic, retain) NSNumber *nullTestAttribute;
-
 
 @property long long nullTestAttributeValue;
 - (long long)nullTestAttributeValue;
@@ -163,11 +127,19 @@
 
 
 
+@property (nonatomic, retain) NSString *mappedStringAttribute;
 
-@property (nonatomic, retain) NSString *stringTestAttribute;
+//- (BOOL)validateMappedStringAttribute:(id*)value_ error:(NSError**)error_;
 
 
-//- (BOOL)validateStringTestAttribute:(id*)value_ error:(NSError**)error_;
+
+@property (nonatomic, retain) NSNumber *int64TestAttribute;
+
+@property long long int64TestAttributeValue;
+- (long long)int64TestAttributeValue;
+- (void)setInt64TestAttributeValue:(long long)value_;
+
+//- (BOOL)validateInt64TestAttribute:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -182,17 +154,26 @@
 @interface _SingleEntityWithNoRelationships (CoreDataGeneratedPrimitiveAccessors)
 
 
-- (NSNumber*)primitiveBooleanTestAttribute;
-- (void)setPrimitiveBooleanTestAttribute:(NSNumber*)value;
+- (NSNumber*)primitiveFloatTestAttribute;
+- (void)setPrimitiveFloatTestAttribute:(NSNumber*)value;
 
-- (BOOL)primitiveBooleanTestAttributeValue;
-- (void)setPrimitiveBooleanTestAttributeValue:(BOOL)value_;
-
-
+- (float)primitiveFloatTestAttributeValue;
+- (void)setPrimitiveFloatTestAttributeValue:(float)value_;
 
 
-- (UIColor*)primitiveColorTestAttribute;
-- (void)setPrimitiveColorTestAttribute:(UIColor*)value;
+
+
+- (NSDate*)primitiveDateWithCustomFormat;
+- (void)setPrimitiveDateWithCustomFormat:(NSDate*)value;
+
+
+
+
+- (NSNumber*)primitiveInt32TestAttribute;
+- (void)setPrimitiveInt32TestAttribute:(NSNumber*)value;
+
+- (int)primitiveInt32TestAttributeValue;
+- (void)setPrimitiveInt32TestAttributeValue:(int)value_;
 
 
 
@@ -203,8 +184,17 @@
 
 
 
-- (NSDate*)primitiveDateWithCustomFormat;
-- (void)setPrimitiveDateWithCustomFormat:(NSDate*)value;
+- (NSNumber*)primitiveInt16TestAttribute;
+- (void)setPrimitiveInt16TestAttribute:(NSNumber*)value;
+
+- (short)primitiveInt16TestAttributeValue;
+- (void)setPrimitiveInt16TestAttributeValue:(short)value_;
+
+
+
+
+- (NSString*)primitiveNotInJsonAttribute;
+- (void)setPrimitiveNotInJsonAttribute:(NSString*)value;
 
 
 
@@ -224,50 +214,23 @@
 
 
 
-- (NSNumber*)primitiveFloatTestAttribute;
-- (void)setPrimitiveFloatTestAttribute:(NSNumber*)value;
+- (NSNumber*)primitiveBooleanTestAttribute;
+- (void)setPrimitiveBooleanTestAttribute:(NSNumber*)value;
 
-- (float)primitiveFloatTestAttributeValue;
-- (void)setPrimitiveFloatTestAttributeValue:(float)value_;
-
-
-
-
-- (NSNumber*)primitiveInt16TestAttribute;
-- (void)setPrimitiveInt16TestAttribute:(NSNumber*)value;
-
-- (short)primitiveInt16TestAttributeValue;
-- (void)setPrimitiveInt16TestAttributeValue:(short)value_;
+- (BOOL)primitiveBooleanTestAttributeValue;
+- (void)setPrimitiveBooleanTestAttributeValue:(BOOL)value_;
 
 
 
 
-- (NSNumber*)primitiveInt32TestAttribute;
-- (void)setPrimitiveInt32TestAttribute:(NSNumber*)value;
-
-- (int)primitiveInt32TestAttributeValue;
-- (void)setPrimitiveInt32TestAttributeValue:(int)value_;
+- (UIColor*)primitiveColorTestAttribute;
+- (void)setPrimitiveColorTestAttribute:(UIColor*)value;
 
 
 
 
-- (NSNumber*)primitiveInt64TestAttribute;
-- (void)setPrimitiveInt64TestAttribute:(NSNumber*)value;
-
-- (long long)primitiveInt64TestAttributeValue;
-- (void)setPrimitiveInt64TestAttributeValue:(long long)value_;
-
-
-
-
-- (NSString*)primitiveMappedStringAttribute;
-- (void)setPrimitiveMappedStringAttribute:(NSString*)value;
-
-
-
-
-- (NSString*)primitiveNotInJsonAttribute;
-- (void)setPrimitiveNotInJsonAttribute:(NSString*)value;
+- (NSString*)primitiveStringTestAttribute;
+- (void)setPrimitiveStringTestAttribute:(NSString*)value;
 
 
 
@@ -281,8 +244,17 @@
 
 
 
-- (NSString*)primitiveStringTestAttribute;
-- (void)setPrimitiveStringTestAttribute:(NSString*)value;
+- (NSString*)primitiveMappedStringAttribute;
+- (void)setPrimitiveMappedStringAttribute:(NSString*)value;
+
+
+
+
+- (NSNumber*)primitiveInt64TestAttribute;
+- (void)setPrimitiveInt64TestAttribute:(NSNumber*)value;
+
+- (long long)primitiveInt64TestAttributeValue;
+- (void)setPrimitiveInt64TestAttributeValue:(long long)value_;
 
 
 

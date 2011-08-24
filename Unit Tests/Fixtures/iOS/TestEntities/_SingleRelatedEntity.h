@@ -4,10 +4,10 @@
 #import <CoreData/CoreData.h>
 
 
-@class AbstractRelatedEntity;
+@class ConcreteRelatedEntity;
 @class AbstractRelatedEntity;
 @class ConcreteRelatedEntity;
-@class ConcreteRelatedEntity;
+@class AbstractRelatedEntity;
 
 
 
@@ -22,40 +22,30 @@
 
 
 
-
 @property (nonatomic, retain) NSString *mappedStringAttribute;
-
 
 //- (BOOL)validateMappedStringAttribute:(id*)value_ error:(NSError**)error_;
 
 
 
 
+@property (nonatomic, retain) ConcreteRelatedEntity* testConcreteToOneRelationship;
+//- (BOOL)validateTestConcreteToOneRelationship:(id*)value_ error:(NSError**)error_;
+
+
 
 @property (nonatomic, retain) NSSet* testAbstractToManyRelationship;
-
 - (NSMutableSet*)testAbstractToManyRelationshipSet;
 
 
 
-
-@property (nonatomic, retain) AbstractRelatedEntity* testAbstractToOneRelationship;
-
-//- (BOOL)validateTestAbstractToOneRelationship:(id*)value_ error:(NSError**)error_;
-
-
-
-
 @property (nonatomic, retain) NSSet* testConcreteToManyRelationship;
-
 - (NSMutableSet*)testConcreteToManyRelationshipSet;
 
 
 
-
-@property (nonatomic, retain) ConcreteRelatedEntity* testConcreteToOneRelationship;
-
-//- (BOOL)validateTestConcreteToOneRelationship:(id*)value_ error:(NSError**)error_;
+@property (nonatomic, retain) AbstractRelatedEntity* testAbstractToOneRelationship;
+//- (BOOL)validateTestAbstractToOneRelationship:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -86,13 +76,13 @@
 
 
 
+- (ConcreteRelatedEntity*)primitiveTestConcreteToOneRelationship;
+- (void)setPrimitiveTestConcreteToOneRelationship:(ConcreteRelatedEntity*)value;
+
+
+
 - (NSMutableSet*)primitiveTestAbstractToManyRelationship;
 - (void)setPrimitiveTestAbstractToManyRelationship:(NSMutableSet*)value;
-
-
-
-- (AbstractRelatedEntity*)primitiveTestAbstractToOneRelationship;
-- (void)setPrimitiveTestAbstractToOneRelationship:(AbstractRelatedEntity*)value;
 
 
 
@@ -101,8 +91,8 @@
 
 
 
-- (ConcreteRelatedEntity*)primitiveTestConcreteToOneRelationship;
-- (void)setPrimitiveTestConcreteToOneRelationship:(ConcreteRelatedEntity*)value;
+- (AbstractRelatedEntity*)primitiveTestAbstractToOneRelationship;
+- (void)setPrimitiveTestAbstractToOneRelationship:(AbstractRelatedEntity*)value;
 
 
 @end

@@ -19,9 +19,7 @@
 
 
 
-
 @property (nonatomic, retain) NSSet* mappedEntities;
-
 - (NSMutableSet*)mappedEntitiesSet;
 
 

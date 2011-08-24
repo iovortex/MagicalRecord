@@ -19,18 +19,14 @@
 
 
 
-
 @property (nonatomic, retain) NSString *secondaryMappedAttribute;
-
 
 //- (BOOL)validateSecondaryMappedAttribute:(id*)value_ error:(NSError**)error_;
 
 
 
 
-
 @property (nonatomic, retain) MappedEntity* mappedRelationship;
-
 //- (BOOL)validateMappedRelationship:(id*)value_ error:(NSError**)error_;
 
 

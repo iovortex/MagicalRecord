@@ -19,9 +19,7 @@
 
 
 
-
 @property (nonatomic, retain) MappedEntity* mappedEntity;
-
 //- (BOOL)validateMappedEntity:(id*)value_ error:(NSError**)error_;
 
 

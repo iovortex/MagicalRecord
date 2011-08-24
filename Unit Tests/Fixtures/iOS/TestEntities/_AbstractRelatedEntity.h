@@ -18,9 +18,7 @@
 
 
 
-
 @property (nonatomic, retain) NSString *sampleBaseAttribute;
-
 
 //- (BOOL)validateSampleBaseAttribute:(id*)value_ error:(NSError**)error_;
 

@@ -44,6 +44,13 @@
 
 
 
+@dynamic sampleAttribute;
+
+
+
+
+
+
 @dynamic mappedEntityID;
 
 
@@ -70,20 +77,6 @@
 
 
 
-@dynamic nestedAttribute;
-
-
-
-
-
-
-@dynamic sampleAttribute;
-
-
-
-
-
-
 @dynamic testMappedEntityID;
 
 
@@ -105,6 +98,13 @@
 - (void)setPrimitiveTestMappedEntityIDValue:(long long)value_ {
 	[self setPrimitiveTestMappedEntityID:[NSNumber numberWithLongLong:value_]];
 }
+
+
+
+
+
+@dynamic nestedAttribute;
+
 
 
 

@@ -41,7 +41,7 @@
 	
 - (NSMutableSet*)mappedEntitiesSet {
 	[self willAccessValueForKey:@"mappedEntities"];
-	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"mappedEntities"];
+	NSMutableSet *result = [self mutableSetValueForKey:@"mappedEntities"];
 	[self didAccessValueForKey:@"mappedEntities"];
 	return result;
 }

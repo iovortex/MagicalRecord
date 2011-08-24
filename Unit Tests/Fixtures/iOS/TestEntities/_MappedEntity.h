@@ -21,9 +21,13 @@
 
 
 
+@property (nonatomic, retain) NSString *sampleAttribute;
+
+//- (BOOL)validateSampleAttribute:(id*)value_ error:(NSError**)error_;
+
+
 
 @property (nonatomic, retain) NSNumber *mappedEntityID;
-
 
 @property short mappedEntityIDValue;
 - (short)mappedEntityIDValue;
@@ -33,31 +37,19 @@
 
 
 
-
-@property (nonatomic, retain) NSString *nestedAttribute;
-
-
-//- (BOOL)validateNestedAttribute:(id*)value_ error:(NSError**)error_;
-
-
-
-
-@property (nonatomic, retain) NSString *sampleAttribute;
-
-
-//- (BOOL)validateSampleAttribute:(id*)value_ error:(NSError**)error_;
-
-
-
-
 @property (nonatomic, retain) NSNumber *testMappedEntityID;
-
 
 @property long long testMappedEntityIDValue;
 - (long long)testMappedEntityIDValue;
 - (void)setTestMappedEntityIDValue:(long long)value_;
 
 //- (BOOL)validateTestMappedEntityID:(id*)value_ error:(NSError**)error_;
+
+
+
+@property (nonatomic, retain) NSString *nestedAttribute;
+
+//- (BOOL)validateNestedAttribute:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -72,6 +64,12 @@
 @interface _MappedEntity (CoreDataGeneratedPrimitiveAccessors)
 
 
+- (NSString*)primitiveSampleAttribute;
+- (void)setPrimitiveSampleAttribute:(NSString*)value;
+
+
+
+
 - (NSNumber*)primitiveMappedEntityID;
 - (void)setPrimitiveMappedEntityID:(NSNumber*)value;
 
@@ -81,23 +79,17 @@
 
 
 
-- (NSString*)primitiveNestedAttribute;
-- (void)setPrimitiveNestedAttribute:(NSString*)value;
-
-
-
-
-- (NSString*)primitiveSampleAttribute;
-- (void)setPrimitiveSampleAttribute:(NSString*)value;
-
-
-
-
 - (NSNumber*)primitiveTestMappedEntityID;
 - (void)setPrimitiveTestMappedEntityID:(NSNumber*)value;
 
 - (long long)primitiveTestMappedEntityIDValue;
 - (void)setPrimitiveTestMappedEntityIDValue:(long long)value_;
+
+
+
+
+- (NSString*)primitiveNestedAttribute;
+- (void)setPrimitiveNestedAttribute:(NSString*)value;
 
 
 
